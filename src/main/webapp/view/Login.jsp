@@ -13,7 +13,7 @@
 	<div class = "container">
 		<div class = "form-container">
 			<h1>Sign in</h1>
-			<form action = "#" method = "POST">
+			<form action = "../LoginServlet" method = "POST">
 				<div class = "input-area">
 					<input type = "text" name = "id" required autocomplete = "off" maxlength = 20 />
 					<label for = "id">ID</label>
@@ -37,7 +37,7 @@
 		<div class = "overlay-container">
 			<h3>계정이 없으신가요?</h3>
 			<div class = "btn-area">
-				<button id = "sign-up" type = "submit">Sign Up</button>
+				<button id = "sign-up" type = "button">Sign Up</button>
 			</div>
 		</div>
 	</div>
