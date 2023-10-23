@@ -20,6 +20,11 @@ a {
 	color: #333;
 }
 
+p {
+	position: absolute;
+	color: #ff0000;
+}
+
 button {
   	border-radius: 20px;
   	border: none;
@@ -92,6 +97,10 @@ button {
 #sign-in {
 	background-color: #166caa;
 	color: #fff;
+}
+
+#sign-in:disabled {
+	background-color: #efefef;
 }
 
 .overlay-container {
