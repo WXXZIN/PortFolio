@@ -16,4 +16,14 @@ public class UsersDAOImplByMyBatis implements UsersDAO {
 		sqlSession.close();
 		return result;
 	}
+
+	@Override
+	public int updatePwUsers(Users users) {
+		SqlSession sqlSession = SqlSessionFactoryBean.getSqlSession();
+		
+		int result = sqlSession.update("com.wp.pofo.UsersMapper.updateUsers", users);
+		
+		sqlSession.close();
+		return result;
+	}
 }

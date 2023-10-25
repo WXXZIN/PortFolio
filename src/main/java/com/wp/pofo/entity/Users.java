@@ -14,11 +14,11 @@ public class Users {
 		this.password = password;
 		this.role = role;
 	}
-	public int getStudno() {
+	public int getId() {
 		return id;
 	}
-	public void setStudno(int studno) {
-		this.id = studno;
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getPassword() {
 		return password;
@@ -35,6 +35,6 @@ public class Users {
 
 	@Override
 	public String toString() {
-		return "Users [studno=" + id + ", password=" + password + ", role=" + role + "]";
+		return "Users [id=" + id + ", password=" + password + ", role=" + role + "]";
 	}
 }

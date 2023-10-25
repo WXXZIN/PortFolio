@@ -1,6 +1,6 @@
 package com.wp.pofo.entity;
 
-public class Students {
+public class Student {
 	private int studno;
 	private String dept;
 	private String name;
@@ -8,10 +8,10 @@ public class Students {
 	private String tel;
 	private String email;
 	
-	public Students() {
+	public Student() {
 	}
 	
-	public Students(int studno, String dept, String name, int grade, String tel, String email) {
+	public Student(int studno, String dept, String name, int grade, String tel, String email) {
 		super();
 		this.studno = studno;
 		this.dept = dept;

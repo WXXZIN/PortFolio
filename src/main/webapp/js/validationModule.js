@@ -1,8 +1,8 @@
 function isIdLenValid(id) {
-	return id.length >= 4;
+	return id.length == 9;
 }
 
-function isIdValueValid(id, idMap) {
+function isIdExist(id, idMap) {
 	return !idMap[id];
 }
 
@@ -10,4 +10,4 @@ function isPwLenValid(pw) {
 	return pw.length >= 4;
 }
 
-export { isIdLenValid, isIdValueValid, isPwLenValid };
+export { isIdLenValid, isIdExist, isPwLenValid };

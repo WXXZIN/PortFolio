@@ -1,17 +1,18 @@
+import { performLogin } from './dataModule.js';
 import { isIdLenValid, isPwLenValid } from './validationModule.js';
 
-function initSigninModule() {
+function initLoginModule() {
 	const $idInput = $("input[name='id']");
     const $pwInput = $("input[name='pw']");
-   	const $idMessage = $("p[id='id-Message']");
-   	const $pwMessage = $("p[id='pw-Message']")
-    const $submitButton = $("button[id='sign-in']");
+   	const $idMessage = $("p#id-Message");
+   	const $pwMessage = $("p#pw-Message");
+    const $submitButton = $("button[id='login']");
     
 	function handleIdInputChange() {
 		const idValue = $idInput.val();
 		const idLenValid = isIdLenValid(idValue);
 		
-		$idMessage.text(!idLenValid ? "4글자 이상을 입력하세요." : "");
+		$idMessage.text(!idLenValid ? "학번 9글자를 입력하세요." : "");
 
 		updateSubmitButton(idLenValid && isPwLenValid($pwInput.val()));
     }
@@ -33,5 +34,6 @@ function initSigninModule() {
 }
 
 $(document).ready(function() {
-    initSigninModule();
+    performLogin();
+    initLoginModule();
 });

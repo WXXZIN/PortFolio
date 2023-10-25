@@ -7,4 +7,9 @@
 	resultType = "com.wp.pofo.entity.Users">
 	SELECT * FROM users WHERE id = #{id}
 	</select>
+	
+	<update id = "updateUsers"
+	parameterType = "com.wp.pofo.entity.Users">
+	UPDATE users SET password = ${password} WHERE id = #{id}
+	</update>
 </mapper>

@@ -94,12 +94,12 @@ button {
 	margin-top: 30px;
 }
 
-#sign-in {
+#login {
 	background-color: #166caa;
 	color: #fff;
 }
 
-#sign-in:disabled {
+#login:disabled {
 	background-color: #efefef;
 }
 

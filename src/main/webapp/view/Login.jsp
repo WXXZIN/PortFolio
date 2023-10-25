@@ -6,16 +6,16 @@
 <meta charset="UTF-8">
 <title>로그인</title>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script type = "module" src = "../js/signinModule.js"></script>
+<script type = "module" src = "../js/loginModule.js"></script>
 <link rel = "stylesheet" href = "../css/login.css">
 </head>
 <body>
 	<div class = "container">
 		<div class = "form-container">
-			<h1>Sign in</h1>
-			<form action = "../LoginServlet" method = "POST">
+			<h1>Login</h1>
+			<form>
 				<div class = "input-area">
-					<input type = "text" name = "id" required autocomplete = "off" maxlength = 20 />
+					<input type = "text" name = "id" required autocomplete = "off" maxlength = 9 />
 					<label for = "id">ID</label>
 					<p id = "id-Message"></p>
 				</div>
@@ -28,7 +28,7 @@
 				<a href = #>아이디/비밀번호 찾기</a>
 				
 				<div class = "btn-area">
-					<button id = "sign-in" type = "submit" disabled>Sign in</button>
+					<button id = "login" type = "submit" disabled>Login</button>
 				</div>
 				
 			</form>

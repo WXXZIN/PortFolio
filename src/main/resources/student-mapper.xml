@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wp.pofo.StudentMapper">
+	<select id = "SearchStudent"
+	parameterType = "com.wp.pofo.entity.Student"
+	resultType = "com.wp.pofo.entity.Student">
+	SELECT * FROM student WHERE studno = #{studno} AND name = #{name} AND tel = #{tel}
+	</select>
+</mapper>
